@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BMI Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="page-container">
+
+        <section class="bmi-card">
+
+            <div class="heading">
+                <h1>BMI Calculator</h1>
+                <p>Enter your weight and height to calculate your BMI.</p>
+            </div>
+
+            <div class="input-group">
+                <label for="weight">Weight</label>
+
+                <div class="input-box">
+                    <input type="number" id="weight" placeholder="Enter your weight" min="1">
+                    <span>kg</span>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="height">Height</label>
+
+                <div class="input-box">
+                    <input type="number" id="height" placeholder="Enter your height" min="1">
+                    <span>cm</span>
+                </div>
+            </div>
+
+            <button id="calculateBtn">
+                Calculate BMI
+            </button>
+
+            <button id="resetBtn" class="reset-button">
+                Reset
+            </button>
+
+            <div id="result" class="result-box">
+                <p>Your BMI result will appear here.</p>
+            </div>
+
+            <div class="bmi-information">
+                <h2>BMI Categories</h2>
+
+                <div class="category">
+                    <span>Underweight</span>
+                    <strong>Below 18.5</strong>
+                </div>
+
+                <div class="category">
+                    <span>Normal weight</span>
+                    <strong>18.5 – 24.9</strong>
+                </div>
+
+                <div class="category">
+                    <span>Overweight</span>
+                    <strong>25 – 29.9</strong>
+                </div>
+
+                <div class="category">
+                    <span>Obese</span>
+                    <strong>30 and above</strong>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
